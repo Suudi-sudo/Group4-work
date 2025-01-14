@@ -7,9 +7,9 @@ app = Flask(__name__)
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587 
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'suudi.abdisalan1@student.moringaschool.com'
+app.config['MAIL_USERNAME'] = 'tipida5940@sfxeur.com'
 app.config['MAIL_PASSWORD'] = 'cfba uzjf yfjv zxcq' 
-app.config['MAIL_DEFAULT_SENDER'] = 'suudi.abdisalan1@student.moringaschool.com'
+app.config['MAIL_DEFAULT_SENDER'] = 'tipida5940@sfxeur.com'
 
 mail = Mail(app)
 
@@ -18,7 +18,7 @@ def send_email():
     
     subject = request.args.get('subject', 'moringaaaa')
     body = request.args.get('body', 'Hello, there.')
-    recipient = request.args.get('recipient', 'charles.njoroge@student.moringaschool.com')
+    recipient = request.args.get('recipient', 'tipida5940@sfxeur.com')
 
     # Create and send the email
 
